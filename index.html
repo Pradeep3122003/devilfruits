@@ -45,8 +45,14 @@
     <script>
         var load=document.getElementById("load");
         var tool=document.getElementById("tool");
+        var home=document.getElementById("home");
+        var cards=document.getElementById("cards");
+        home.style.display="none";
+        cards.style.display="none";
         window.addEventListener("load",function(){
             load.style.display="none";
+            home.style.display="block";
+            cards.style.display="grid";
         })
 
         search=()=>{
